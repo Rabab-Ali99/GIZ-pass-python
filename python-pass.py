@@ -18,7 +18,7 @@ def find_longest_palindromic_substring(string):
             right_pointer += 1
             left_pointer -= 1
 
-        # here we considering even length so starting from the middle of string and expanding
+        # here we considering even length 
         left_pointer = i
         right_pointer = i + 1
         while left_pointer >= 0 and right_pointer < len(string) and string[left_pointer] == string[right_pointer]:
